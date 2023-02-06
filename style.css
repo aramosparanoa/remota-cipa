@@ -1,0 +1,239 @@
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*FUNDO GRADIENTE*/
+  
+  body {
+    /* background: linear-gradient(-45deg, #2a8c4a, #00ff40, #9bfab0, #d0fdd7); */
+    background-image: linear-gradient( -45deg,#e3fdf4,#c8f7e6,#2ED499, #25AC7F  );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100%;
+    position: static;
+    overflow: auto;
+  }
+  
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  
+  
+  /*MENU*/
+  header {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+
+  }
+  
+  #menu {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+    
+  /* imp */
+  .imp{
+    width: 4%;
+    margin-top: -1%;
+  }
+
+  #menu,.logo{
+    position: relative;
+  }
+   
+  
+   
+  
+  /*img menu*/
+  
+  .logo {
+    width: 45%;
+    /* position: relative; */
+
+    
+    
+  
+  }
+  
+ 
+  
+  
+  /*Container's*/
+  .container {
+    width: 95%;
+    max-width: 95%;
+    height: 95%;
+    min-height: 95%;
+    position: auto;
+    margin-top: 5%;
+    padding: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    box-shadow: 0 0 40px #fff (0, 0, 0, 0.2);
+    border-radius: 6px;
+    background-color: #fff;
+  
+  }
+
+  .container-re {
+    width: 95%;
+    max-width: 95%;
+    height: 95%;
+    min-height: 95%;
+    position: auto;
+    margin-top: 4%;
+    padding: 2rem;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    box-shadow: 0 0 40px #fff (0, 0, 0, 0.2);
+    border-radius: 6px;
+    background-color: #fff;
+  
+  }
+
+
+  /*dialogo*/
+
+.modalDialog {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modalDialog > div {
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+  }
+  .close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+  }
+  .close:hover {
+    background: #44b46a;
+    color: #fff;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+  
+  .card p {
+    color: #a3a5ae;
+    font-size: 13px;
+  }
+  
+  .image {
+    float: right;
+    max-width: 40%;
+    max-height: 40%;
+  }
+
+  .image-open {
+    float: right;
+    max-width: 40%;
+    max-height: 40%;
+  }
+  
+  
+  
+  .green{
+    border-left: 3px solid #3bb54a;
+     display: table-header-group;
+  }
+  h4,p{
+    display: table-header-group;
+  }
+  
+  
+  
+  
+  /* ---- FOOTER ---- */
+  footer {
+    background-color: #fff;
+    padding-top: 20px;
+    width: 100%;
+    height: 10%;  
+    text-align: center;
+    margin-top: 100%;
+    position: fixed;
+    bottom:0;
+    left:0;
+  }
+  
+  
+  .direitos {
+    margin-top: 50%;
+  
+  }
+  
+  
+  
+  
